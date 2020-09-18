@@ -15,3 +15,13 @@
   top: 0;
   z-index: 1;
 }
+
+.mat-drawer-container {
+  background-color: white;
+  color: black;
+}
+
+.content-wrapper {
+  padding: 2.1rem 2rem 0;
+  height : 100vh;
+}
