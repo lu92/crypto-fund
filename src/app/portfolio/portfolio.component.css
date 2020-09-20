@@ -1,0 +1,13 @@
+.mat-card {
+  background-color: white;
+  color: black;
+  display: block;
+  overflow: auto;
+}
+
+.ngx-charts-outer.ng-tns-c47-1.ng-trigger.ng-trigger-animationState {
+  /*background-color: aqua;*/
+  /*display: block;*/
+  /*overflow: auto;*/
+  margin: auto;
+}

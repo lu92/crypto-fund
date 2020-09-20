@@ -9,9 +9,6 @@ export class DashboardComponent implements OnInit {
 
   constructor() { }
 
-
   public ngOnInit(): void {
   }
-
-
 }

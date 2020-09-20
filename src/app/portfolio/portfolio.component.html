@@ -1,0 +1,29 @@
+<mat-card class = "tp-card">
+  <mat-card-header>
+    <mat-card-title>Portfolio</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <div class="container-fluid">
+      <div class="row pt-2">
+
+        <div class="col-md-12">
+          <div class="card text-left">
+            <div class="card-body">
+              <ngx-charts-pie-chart
+                [results]="saleData"
+                [doughnut]="true"
+                [explodeSlices]="true"
+                [legend]="true"
+                [legendTitle]="'Portfolio'"
+                [view]="[600,400]" >
+              </ngx-charts-pie-chart>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
