@@ -1,9 +1,31 @@
 .estimated-balance-container {
-  display: flex!important;
+  display: flex !important;
   flex-direction: row;
 }
 
 .horizontal-row {
-  display: flex!important;
+  display: flex !important;
   flex-direction: row;
+}
+
+.bigger-label {
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.lower-label {
+  font-size: 14px;
+  padding-top: 20px
+}
+
+.positive-change-pct {
+  font-size: 14px;
+  padding-top: 20px;
+  color: limegreen;
+}
+
+.negative-change-pct {
+  font-size: 14px;
+  padding-top: 20px;
+  color: firebrick;
 }

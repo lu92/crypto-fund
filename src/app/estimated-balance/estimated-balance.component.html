@@ -13,9 +13,9 @@
   <div class="row">
     <div class="col-sm-6">
       <div class="estimated-balance-container">
-        <div style="font-size: 32px; line-height: 37px;">0.06876826</div>
+        <div class="bigger-label">{{estimatedBtcBalance}}</div>
         <div style="font-size: 14px; padding-top: 20px;">BTC</div>
-        <div style="font-size: 14px; padding-top: 20px;"> ≈ $737.20</div>
+        <div style="font-size: 14px; padding-top: 20px;"> ≈ ${{estimatedUsdBalance}}</div>
       </div>
     </div>
     <div class="col-md-3">
@@ -24,14 +24,14 @@
 
       <ng-template #positivePnl>
         <div class="horizontal-row">
-          <div style="font-size: 32px; line-height: 37px;">+$ {{pnlValue}}</div>
+          <div class="bigger-label">+$ {{pnlValue}}</div>
           <div style="font-size: 14px; padding-top: 20px; color: limegreen">+{{pnlChangePercentage}}%</div>
         </div>
       </ng-template>
 
       <ng-template #negativePnl>
         <div class="horizontal-row">
-          <div style="font-size: 32px; line-height: 37px;">-$ {{pnlValue}}</div>
+          <div class="bigger-label">-$ {{pnlValue}}</div>
           <div style="font-size: 14px; padding-top: 20px; color: firebrick">+{{pnlChangePercentage}}%</div>
         </div>
       </ng-template>
@@ -42,15 +42,15 @@
 
       <ng-template #positiveMonthPnl>
         <div class="horizontal-row">
-          <div style="font-size: 32px; line-height: 37px;">+$ {{pnlMonthValue}}</div>
-          <div style="font-size: 14px; padding-top: 20px; color: limegreen">+{{pnlMonthChangePercentage}}%</div>
+          <div class="bigger-label">+$ {{pnlMonthValue}}</div>
+          <div class="positive-change-pct">+{{pnlMonthChangePercentage}}%</div>
         </div>
       </ng-template>
 
       <ng-template #negativeMonthPnl>
         <div class="horizontal-row">
-          <div style="font-size: 32px; line-height: 37px;">-$ {{pnlMonthValue*-1}}</div>
-          <div style="font-size: 14px; padding-top: 20px; color: firebrick">{{pnlMonthChangePercentage}}%</div>
+          <div class="bigger-label">-$ {{pnlMonthValue * -1}}</div>
+          <div class="negative-change-pct">{{pnlMonthChangePercentage}}%</div>
         </div>
       </ng-template>
     </div>

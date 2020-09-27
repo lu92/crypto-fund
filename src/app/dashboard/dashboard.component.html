@@ -1,7 +1,14 @@
 <mat-card class = "tp-card">
   <mat-card-content>
     <div class="container-fluid">
-      <app-estimated-balance></app-estimated-balance>
+      <app-estimated-balance
+        [estimatedBtcBalance]="0.06876826"
+        [estimatedUsdBalance]="737.20"
+        [pnlValue]="5.25"
+        [pnlChangePercentage]="0.72"
+        [pnlMonthValue]="-42.01"
+        [pnlMonthChangePercentage]="-6.54">
+      </app-estimated-balance>
     </div>
   </mat-card-content>
 </mat-card>
