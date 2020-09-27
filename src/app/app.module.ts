@@ -17,6 +17,7 @@ import {PerformanceHistoryComponent} from './performance-history/performance-his
 import {NgxChartsModule} from '@swimlane/ngx-charts';
 import {MatCardModule} from '@angular/material/card';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { EstimatedBalanceComponent } from './estimated-balance/estimated-balance.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     RootNavComponent,
     PerformanceHistoryComponent,
     PortfolioComponent,
+    EstimatedBalanceComponent,
   ],
   imports: [
     BrowserModule,

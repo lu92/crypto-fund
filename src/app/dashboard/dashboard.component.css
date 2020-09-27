@@ -1,0 +1,7 @@
+.mat-card {
+  background-color: white;
+  color: black;
+  display: block;
+  overflow: auto;
+  margin-bottom: 1.875rem;
+}

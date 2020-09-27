@@ -1,0 +1,9 @@
+.estimated-balance-container {
+  display: flex!important;
+  flex-direction: row;
+}
+
+.horizontal-row {
+  display: flex!important;
+  flex-direction: row;
+}

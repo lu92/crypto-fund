@@ -1,0 +1,58 @@
+<div class="content-wrapper">
+  <div class="row">
+    <div class="col-md-6">
+      <p>Estimated Balance</p>
+    </div>
+    <div class="col-sm-3">
+      <p>Today's PNL</p>
+    </div>
+    <div class="col-sm-3">
+      <p>This Month's PNL</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="estimated-balance-container">
+        <div style="font-size: 32px; line-height: 37px;">0.06876826</div>
+        <div style="font-size: 14px; padding-top: 20px;">BTC</div>
+        <div style="font-size: 14px; padding-top: 20px;"> ≈ $737.20</div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <ng-container *ngIf="pnlValue >= 0; then positivePnl; else negativePnl">
+      </ng-container>
+
+      <ng-template #positivePnl>
+        <div class="horizontal-row">
+          <div style="font-size: 32px; line-height: 37px;">+$ {{pnlValue}}</div>
+          <div style="font-size: 14px; padding-top: 20px; color: limegreen">+{{pnlChangePercentage}}%</div>
+        </div>
+      </ng-template>
+
+      <ng-template #negativePnl>
+        <div class="horizontal-row">
+          <div style="font-size: 32px; line-height: 37px;">-$ {{pnlValue}}</div>
+          <div style="font-size: 14px; padding-top: 20px; color: firebrick">+{{pnlChangePercentage}}%</div>
+        </div>
+      </ng-template>
+    </div>
+    <div class="col-md-3">
+      <ng-container *ngIf="pnlMonthValue >= 0; then positiveMonthPnl; else negativeMonthPnl">
+      </ng-container>
+
+      <ng-template #positiveMonthPnl>
+        <div class="horizontal-row">
+          <div style="font-size: 32px; line-height: 37px;">+$ {{pnlMonthValue}}</div>
+          <div style="font-size: 14px; padding-top: 20px; color: limegreen">+{{pnlMonthChangePercentage}}%</div>
+        </div>
+      </ng-template>
+
+      <ng-template #negativeMonthPnl>
+        <div class="horizontal-row">
+          <div style="font-size: 32px; line-height: 37px;">-$ {{pnlMonthValue*-1}}</div>
+          <div style="font-size: 14px; padding-top: 20px; color: firebrick">{{pnlMonthChangePercentage}}%</div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
