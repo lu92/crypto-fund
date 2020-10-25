@@ -18,6 +18,7 @@ import {NgxChartsModule} from '@swimlane/ngx-charts';
 import {MatCardModule} from '@angular/material/card';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { EstimatedBalanceComponent } from './estimated-balance/estimated-balance.component';
+import { DailyPnlComponent } from './daily-pnl/daily-pnl.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { EstimatedBalanceComponent } from './estimated-balance/estimated-balance
     PerformanceHistoryComponent,
     PortfolioComponent,
     EstimatedBalanceComponent,
+    DailyPnlComponent,
   ],
   imports: [
     BrowserModule,
